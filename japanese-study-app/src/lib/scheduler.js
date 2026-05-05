@@ -4,8 +4,9 @@ export function chooseDailyWords(words, lessonSize = 3) {
 }
 
 function priority(word) {
+  if (word.status === 'new') return 4;
   if (word.status === 'hard') return 3;
   if (word.status === 'medium') return 2;
   if (word.status === 'easy') return 1;
-  return 4;
+  return 0;
 }
