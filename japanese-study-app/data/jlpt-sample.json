@@ -1,72 +1,27 @@
 [
-  {
-    "id": "n5-001",
-    "kanji": "今日",
-    "reading": "きょう",
-    "hiragana": "きょう",
-    "english": "today",
-    "jlptLevel": "N5",
-    "examples": [
-      "今日は忙しいです。",
-      "今日はいい天気ですね。",
-      "今日は早く帰ります。"
-    ],
-    "status": "new"
-  },
-  {
-    "id": "n5-002",
-    "kanji": "明日",
-    "reading": "あした",
-    "hiragana": "あした",
-    "english": "tomorrow",
-    "jlptLevel": "N5",
-    "examples": [
-      "明日は休みです。",
-      "明日また連絡します。",
-      "明日は早起きします。"
-    ],
-    "status": "new"
-  },
-  {
-    "id": "n5-003",
-    "kanji": "毎日",
-    "reading": "まいにち",
-    "hiragana": "まいにち",
-    "english": "every day",
-    "jlptLevel": "N5",
-    "examples": [
-      "毎日日本語を勉強しています。",
-      "毎日コーヒーを飲みます。",
-      "毎日同じ時間に起きます。"
-    ],
-    "status": "medium"
-  },
-  {
-    "id": "n5-004",
-    "kanji": "時間",
-    "reading": "じかん",
-    "hiragana": "じかん",
-    "english": "time / hour",
-    "jlptLevel": "N5",
-    "examples": [
-      "時間がありますか。",
-      "もう時間がありません。",
-      "少し時間をください。"
-    ],
-    "status": "hard"
-  },
-  {
-    "id": "n5-005",
-    "kanji": "友達",
-    "reading": "ともだち",
-    "hiragana": "ともだち",
-    "english": "friend",
-    "jlptLevel": "N5",
-    "examples": [
-      "友達と映画を見ました。",
-      "友達に会います。",
-      "友達がたくさんいます。"
-    ],
-    "status": "easy"
-  }
+  { "id": "n5-001", "kanji": "今日", "reading": "きょう", "hiragana": "きょう", "english": "today", "jlptLevel": "N5", "examples": ["今日は忙しいです。", "今日はいい天気ですね。"], "status": "new" },
+  { "id": "n5-002", "kanji": "明日", "reading": "あした", "hiragana": "あした", "english": "tomorrow", "jlptLevel": "N5", "examples": ["明日は休みです。", "明日また連絡します。"], "status": "new" },
+  { "id": "n5-003", "kanji": "毎日", "reading": "まいにち", "hiragana": "まいにち", "english": "every day", "jlptLevel": "N5", "examples": ["毎日日本語を勉強しています。", "毎日コーヒーを飲みます。"], "status": "new" },
+  { "id": "n5-004", "kanji": "時間", "reading": "じかん", "hiragana": "じかん", "english": "time / hour", "jlptLevel": "N5", "examples": ["時間がありますか。", "もう時間がありません。"], "status": "new" },
+  { "id": "n5-005", "kanji": "友達", "reading": "ともだち", "hiragana": "ともだち", "english": "friend", "jlptLevel": "N5", "examples": ["友達と映画を見ました。", "友達に会います。"], "status": "new" },
+  { "id": "n5-006", "kanji": "水", "reading": "みず", "hiragana": "みず", "english": "water", "jlptLevel": "N5", "examples": ["水を飲みます。", "水が冷たいです。"], "status": "new" },
+  { "id": "n5-007", "kanji": "食べる", "reading": "たべる", "hiragana": "たべる", "english": "to eat", "jlptLevel": "N5", "examples": ["ご飯を食べます。", "何を食べますか。"], "status": "new" },
+  { "id": "n5-008", "kanji": "飲む", "reading": "のむ", "hiragana": "のむ", "english": "to drink", "jlptLevel": "N5", "examples": ["お茶を飲みます。", "薬を飲みましたか。"], "status": "new" },
+  { "id": "n5-009", "kanji": "行く", "reading": "いく", "hiragana": "いく", "english": "to go", "jlptLevel": "N5", "examples": ["学校に行きます。", "どこへ行きますか。"], "status": "new" },
+  { "id": "n5-010", "kanji": "来る", "reading": "くる", "hiragana": "くる", "english": "to come", "jlptLevel": "N5", "examples": ["友達が来ます。", "いつ来ますか。"], "status": "new" },
+  { "id": "n5-011", "kanji": "見る", "reading": "みる", "hiragana": "みる", "english": "to see / watch", "jlptLevel": "N5", "examples": ["映画を見ます。", "テレビを見ますか。"], "status": "new" },
+  { "id": "n5-012", "kanji": "聞く", "reading": "きく", "hiragana": "きく", "english": "to listen / ask", "jlptLevel": "N5", "examples": ["音楽を聞きます。", "先生に聞いてください。"], "status": "new" },
+  { "id": "n5-013", "kanji": "話す", "reading": "はなす", "hiragana": "はなす", "english": "to speak", "jlptLevel": "N5", "examples": ["日本語を話します。", "ゆっくり話してください。"], "status": "new" },
+  { "id": "n5-014", "kanji": "読む", "reading": "よむ", "hiragana": "よむ", "english": "to read", "jlptLevel": "N5", "examples": ["本を読みます。", "新聞を読みますか。"], "status": "new" },
+  { "id": "n5-015", "kanji": "書く", "reading": "かく", "hiragana": "かく", "english": "to write", "jlptLevel": "N5", "examples": ["手紙を書きます。", "名前を書いてください。"], "status": "new" },
+  { "id": "n5-016", "kanji": "買う", "reading": "かう", "hiragana": "かう", "english": "to buy", "jlptLevel": "N5", "examples": ["本を買います。", "何を買いますか。"], "status": "new" },
+  { "id": "n5-017", "kanji": "会う", "reading": "あう", "hiragana": "あう", "english": "to meet", "jlptLevel": "N5", "examples": ["友達に会います。", "また会いましょう。"], "status": "new" },
+  { "id": "n5-018", "kanji": "大きい", "reading": "おおきい", "hiragana": "おおきい", "english": "big / large", "jlptLevel": "N5", "examples": ["大きい犬ですね。", "この荷物は大きいです。"], "status": "new" },
+  { "id": "n5-019", "kanji": "小さい", "reading": "ちいさい", "hiragana": "ちいさい", "english": "small / little", "jlptLevel": "N5", "examples": ["小さい猫がいます。", "部屋が小さいです。"], "status": "new" },
+  { "id": "n5-020", "kanji": "新しい", "reading": "あたらしい", "hiragana": "あたらしい", "english": "new", "jlptLevel": "N5", "examples": ["新しい車を買いました。", "新しい友達ができました。"], "status": "new" },
+  { "id": "n5-021", "kanji": "古い", "reading": "ふるい", "hiragana": "ふるい", "english": "old (things)", "jlptLevel": "N5", "examples": ["古い本があります。", "このビルは古いです。"], "status": "new" },
+  { "id": "n5-022", "kanji": "高い", "reading": "たかい", "hiragana": "たかい", "english": "expensive / tall / high", "jlptLevel": "N5", "examples": ["この店は高いです。", "山が高いです。"], "status": "new" },
+  { "id": "n5-023", "kanji": "安い", "reading": "やすい", "hiragana": "やすい", "english": "cheap / inexpensive", "jlptLevel": "N5", "examples": ["このスーパーは安いです。", "安い服を買いました。"], "status": "new" },
+  { "id": "n5-024", "kanji": "学校", "reading": "がっこう", "hiragana": "がっこう", "english": "school", "jlptLevel": "N5", "examples": ["学校に行きます。", "学校は楽しいですか。"], "status": "new" },
+  { "id": "n5-025", "kanji": "先生", "reading": "せんせい", "hiragana": "せんせい", "english": "teacher", "jlptLevel": "N5", "examples": ["先生はやさしいです。", "日本語の先生です。"], "status": "new" }
 ]
