@@ -1,4 +1,7 @@
 import { createAppState } from './lib/state.js';
+import { createEmptyProgress } from './lib/storage.js';
 
 const state = createAppState();
-console.log(JSON.stringify({ app: 'Japanese Study App', state }, null, 2));
+const progress = createEmptyProgress();
+
+console.log(JSON.stringify({ app: 'Japanese Study App', state, progress }, null, 2));
