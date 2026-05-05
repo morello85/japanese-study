@@ -1,0 +1,72 @@
+[
+  {
+    "id": "n5-001",
+    "kanji": "今日",
+    "reading": "きょう",
+    "hiragana": "きょう",
+    "english": "today",
+    "jlptLevel": "N5",
+    "examples": [
+      "今日は忙しいです。",
+      "今日はいい天気ですね。",
+      "今日は早く帰ります。"
+    ],
+    "status": "new"
+  },
+  {
+    "id": "n5-002",
+    "kanji": "明日",
+    "reading": "あした",
+    "hiragana": "あした",
+    "english": "tomorrow",
+    "jlptLevel": "N5",
+    "examples": [
+      "明日は休みです。",
+      "明日また連絡します。",
+      "明日は早起きします。"
+    ],
+    "status": "new"
+  },
+  {
+    "id": "n5-003",
+    "kanji": "毎日",
+    "reading": "まいにち",
+    "hiragana": "まいにち",
+    "english": "every day",
+    "jlptLevel": "N5",
+    "examples": [
+      "毎日日本語を勉強しています。",
+      "毎日コーヒーを飲みます。",
+      "毎日同じ時間に起きます。"
+    ],
+    "status": "medium"
+  },
+  {
+    "id": "n5-004",
+    "kanji": "時間",
+    "reading": "じかん",
+    "hiragana": "じかん",
+    "english": "time / hour",
+    "jlptLevel": "N5",
+    "examples": [
+      "時間がありますか。",
+      "もう時間がありません。",
+      "少し時間をください。"
+    ],
+    "status": "hard"
+  },
+  {
+    "id": "n5-005",
+    "kanji": "友達",
+    "reading": "ともだち",
+    "hiragana": "ともだち",
+    "english": "friend",
+    "jlptLevel": "N5",
+    "examples": [
+      "友達と映画を見ました。",
+      "友達に会います。",
+      "友達がたくさんいます。"
+    ],
+    "status": "easy"
+  }
+]
