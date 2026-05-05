@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/server.js",
+    "cli": "node src/index.js",
+    "preview": "node src/scripts/preview-lesson.js",
     "test": "node --test"
   }
 }
