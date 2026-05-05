@@ -1,7 +1,7 @@
-export function createLesson(words, lessonSize = 3) {
+export function createLesson(words, lessonSize = 3, date = new Date().toISOString().slice(0, 10)) {
   const selected = chooseLessonWords(words, lessonSize);
   return {
-    date: new Date().toISOString().slice(0, 10),
+    date,
     words: selected,
   };
 }
@@ -15,4 +15,12 @@ export function chooseLessonWords(words, lessonSize = 3) {
   });
 
   return sorted.slice(0, lessonSize);
+}
+
+export function hasLessonForDate(progress, date) {
+  return (progress.lessons ?? []).some((lesson) => lesson.date === date);
+}
+
+export function getLessonForDate(progress, date) {
+  return (progress.lessons ?? []).find((lesson) => lesson.date === date) ?? null;
 }

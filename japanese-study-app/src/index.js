@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { createAppState } from './lib/state.js';
 import { createEmptyProgress, loadProgress, saveProgress } from './lib/storage.js';
 import { loadCorpus } from './lib/corpus.js';
-import { createLesson } from './lib/lesson.js';
+import { createLesson, getLessonForDate, hasLessonForDate } from './lib/lesson.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = dirname(__dirname);
@@ -14,13 +14,22 @@ const progressPath = join(root, 'data', 'progress.json');
 const state = createAppState();
 const progress = loadProgress(progressPath);
 const words = loadCorpus(JSON.parse(readFileSync(dataPath, 'utf8')));
-const lesson = createLesson(words, progress.settings?.lessonSize ?? state.defaultLessonSize);
+const today = new Date().toISOString().slice(0, 10);
+const lessonSize = progress.settings?.lessonSize ?? state.defaultLessonSize;
 
+let lesson = getLessonForDate(progress, today);
 const nextProgress = progress.lessons?.length ? progress : createEmptyProgress();
-nextProgress.lessons = [...(nextProgress.lessons ?? []), lesson];
+
+if (!lesson) {
+  lesson = createLesson(words, lessonSize, today);
+  if (!hasLessonForDate(nextProgress, today)) {
+    nextProgress.lessons = [...(nextProgress.lessons ?? []), lesson];
+  }
+}
+
 nextProgress.settings = {
   ...nextProgress.settings,
-  lessonSize: progress.settings?.lessonSize ?? state.defaultLessonSize,
+  lessonSize,
 };
 
 saveProgress(progressPath, nextProgress);

@@ -13,10 +13,21 @@ export function createEmptyProgress() {
   };
 }
 
+export function normalizeProgress(progress) {
+  return {
+    lessons: [...(progress.lessons ?? [])].sort((a, b) => String(a.date).localeCompare(String(b.date))),
+    reviews: [...(progress.reviews ?? [])].sort((a, b) => String(a.date ?? '').localeCompare(String(b.date ?? ''))),
+    settings: {
+      ...createEmptyProgress().settings,
+      ...(progress.settings ?? {}),
+    },
+  };
+}
+
 export function loadProgress(filePath) {
   try {
     const text = readFileSync(filePath, 'utf8');
-    return JSON.parse(text);
+    return normalizeProgress(JSON.parse(text));
   } catch {
     return createEmptyProgress();
   }
@@ -24,5 +35,5 @@ export function loadProgress(filePath) {
 
 export function saveProgress(filePath, progress) {
   mkdirSync(dirname(filePath), { recursive: true });
-  writeFileSync(filePath, JSON.stringify(progress, null, 2));
+  writeFileSync(filePath, JSON.stringify(normalizeProgress(progress), null, 2));
 }
