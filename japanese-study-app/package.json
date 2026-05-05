@@ -1,0 +1,1 @@
+{"name":"japanese-study-app","private":true,"type":"module","scripts":{"start":"node src/index.js"}}
