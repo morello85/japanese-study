@@ -37,3 +37,10 @@ export function saveProgress(filePath, progress) {
   mkdirSync(dirname(filePath), { recursive: true });
   writeFileSync(filePath, JSON.stringify(normalizeProgress(progress), null, 2));
 }
+
+export function saveReview(progress, review) {
+  return {
+    ...progress,
+    reviews: [...(progress.reviews ?? []), review],
+  };
+}

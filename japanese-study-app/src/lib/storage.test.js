@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeProgress } from './storage.js';
+import { normalizeProgress, saveReview } from './storage.js';
 
 test('normalizeProgress sorts lessons and fills settings defaults', () => {
   const normalized = normalizeProgress({
@@ -16,4 +16,9 @@ test('normalizeProgress sorts lessons and fills settings defaults', () => {
     timezone: 'Europe/London',
     notificationTime: '09:00',
   });
+});
+
+test('saveReview appends a review', () => {
+  const next = saveReview({ reviews: [] }, { wordId: 'n5-001', rating: 'easy' });
+  assert.deepEqual(next.reviews, [{ wordId: 'n5-001', rating: 'easy' }]);
 });
